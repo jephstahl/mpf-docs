@@ -114,7 +114,7 @@ There are three ways you can use the smart virtual platform:
 
 If you do not have a ``platform:`` setting in your machine config's
 ``hardware:`` section (or if you don't have a ``hardware:``
-section, then MPF will use the smart virtual platform anyone you
+section, then MPF will use the smart virtual platform anytime you
 run it.
 
 2. Manually setting the platform
