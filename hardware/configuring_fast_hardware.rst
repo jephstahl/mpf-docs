@@ -66,7 +66,8 @@ Understanding FAST hardware ports
 Even though the FAST controllers are USB devices, they use "virtual"
 COM ports to communicate with the host computer running MPF. On your
 computer, if you look at your list of ports and then plug-in and turn
-on your FAST controller, you will see 4 new ports appear. The exact
+on your FAST controller, you will see 4 new ports appear.  On a mac
+you can type "ls /dev/tty.*" in a terminal to see the ports available.  Exact
 names and numbers of these ports will vary depending on your computer
 and what else you've plugged in in the past. The mapping order of the
 four ports is the same across all FAST controllers:
@@ -119,6 +120,14 @@ your config like this:
 
     fast:
         ports: com4, com5
+
+
+or, on a mac
+::
+
+
+   fast:
+      ports: /dev/tty.usbserial-fd12B, /dev/tty.usbserial-fd12C/
 
 
 Full details of the port options as well as the other options
